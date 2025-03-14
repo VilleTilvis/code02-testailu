@@ -9,6 +9,7 @@ def app(environ, respond):
     salanimi = polku.replace("a","aca").replace("i","hani")
     yield "<h1>Huomio</h1>".encode('utf-8')
     yield f"<p>Salainen nimesi on <b>{salanimi}</b></p>".encode('utf-8')
+    yield "<form method=GET><input type=button value=paina></form>".encode("utf-8")
     #for key in environ:
     #    yield ("%s: %s\n" % (key, environ[key])).encode('utf-8')
 
